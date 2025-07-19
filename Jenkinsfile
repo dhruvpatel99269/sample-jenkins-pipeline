@@ -6,6 +6,11 @@ pipeline {
     // as the build environment is defined by the Docker image itself.
 
     stages {
+        stage('Clean Workspace') {
+            steps {
+                cleanWs() // Jenkins workspace cleanup
+            }
+        }
         // This stage downloads your code from GitHub
         stage('Checkout') {
             steps {
