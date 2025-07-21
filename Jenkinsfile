@@ -14,7 +14,7 @@ pipeline {
         // This stage downloads your code from GitHub
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/PranayVasoya/sample-node-app.git', branch: 'master'
+                git url: 'https://github.com/dhruvpatel99269/sample-jenkins-pipeline.git', branch: 'master'
             }
         }
 
